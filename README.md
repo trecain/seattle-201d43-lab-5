@@ -17,7 +17,8 @@ Today in lab you will fork and clone a GitHub repo, and then create solutions to
 To get started on this lab:
 1. Fork this repo, and then clone that forked version.
 2. Check out a new branch to start working on problem 2 (we already did problem 1 together).
-3. Once you've finished that problem, add, commit, and push to your problem 2 branch on GitHub.
+3. Once you've finished that problem, un-comment the test for that problem to ensure that it passes.
+4. Add, commit, and push to your problem 2 branch on GitHub.
 4. Make a pull request on GitHub and merge those changes into your master branch on GitHub.
 5. Check out your master branch on your computer.
 6. Pull your master branch from GitHub to your own computer.
