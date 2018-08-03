@@ -14,6 +14,26 @@ Today in lab you will fork and clone a GitHub repo, and then create solutions to
 
 **Be sure to follow instructions carefully.**
 
+To get started on this lab:
+1. Fork this repo, and then clone that forked version.
+2. Check out a new branch to start working on problem 2 (we already did problem 1 together).
+3. Once you've finished that problem, add, commit, and push to your problem 2 branch on GitHub.
+4. Make a pull request on GitHub and merge those changes into your master branch on GitHub.
+5. Check out your master branch on your computer.
+6. Pull your master branch from GitHub to your own computer.
+7. Go back to step 2, and repeat for the next problem.
+
+The specific git steps required, starting on the master branch:
+1. `git checkout -b new-branch-name`
+2. edit your code, make the changes needed to solve the problem
+3. `git add .`
+4. `git commit -m "finished that problem"`
+5. `git push origin new-branch-name`
+6. On GitHub, make the pull request from `new-branch-name` to `master`. Merge that branch.
+7. In your terminal, `git checkout master`
+8. `git pull origin master`
+9. Repeat from step 1!
+
 Here are a couple of things to keep in mind:
 
 * Place no function calls in your code, unless inside of another function. Everything should be run by hand from the console. This is to give you additional practice using the console and practice efficient app-switching processes.
