@@ -48,8 +48,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  return [sum((sum(a, b)[0]), c)[0], multiply((multiply(a, b)[0]), c)[0], a + ' and ' + b + ' and ' + c + ' sum to ' + (a+ b + c) + '.',
-  'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + (a * b * c) + '.'];
+  return [sum((sum(a, b)[0]), c)[0], multiply((multiply(a, b)[0]), c)[0], a + ' and ' + b + ' and ' + c + ' sum to ' + sum((sum(a, b)[0]), c)[0] + '.',
+  'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiply((multiply(a, b)[0]), c)[0] + '.'];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -119,13 +119,13 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-  var sum = 1;
+  var sums = 1;
   var numbers = "";
   dynamicArray.forEach(function(num){
-    numbers += num + ',';
-    sum *= Number(num); 
+    numbers = sum(numbers, num)[0] + ',';
+    sums = multiply(sums, Number(num))[0]; 
   });
-  return [sum, 'The numbers ' + numbers.slice(0, -1) + ' have a product of ' + sum + '.' ]; 
+  return [sums, 'The numbers ' + numbers.slice(0, -1) + ' have a product of ' + sums + '.' ]; 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
